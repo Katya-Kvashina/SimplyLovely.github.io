@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="C:\Users\admin\Documents\нтернет-ресурсы\port-verstappen-2024.jpg" type="image/png">
+    <title>Календарь F1 2025 - Simply Lovely F1</title>
+    <!-- Manifest для PWA -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Предзагрузка критических ресурсов -->
+<link rel="preload" href="index.css" as="style">
+<link rel="preload" href="theme.js" as="script">
+<link rel="preload" href="app.js" as="script">
+
+<!-- Meta теги для PWA -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="F1 App">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#e10600">
+
+<!-- Open Graph метатеги -->
+<meta property="og:title" content="Simply Lovely F1">
+<meta property="og:description" content="Мир Формулы 1 - новости, календарь, команды и статистика">
+<meta property="og:image" content="https://ваш-сайт.com/og-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ваш-сайт.com">
+</head>
+<body>
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="burger-btn">
+        <span></span>
+    </label>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="C:\Users\admin\Documents\нтернет-ресурсы\port-verstappen-2024.jpg" alt="Логотип Формулы 1" width="40" height="40">
+                <span>Simply Lovely F1</span>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="calendar.html" class="active">Календарь</a></li>
+                    <li><a href="teams.html">Команды</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="notification-container">
+                <div class="notification-bell">🔔 <span class="notification-count">3</span></div>
+                <div class="notification-dropdown">
+                    <div class="notification-item">📢 Новый сезон 2025 начинается!</div>
+                    <div class="notification-item">🏆 Обновление регламента</div>
+                    <div class="notification-item">📅 Следующий ГП: Бахрейн</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="calendar.html" class="active">Календарь</a></li>
+            <li><a href="teams.html">Команды</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>Календарь Формулы 1 2025</h1>
+            <p>Полное расписание гонок, квалификаций и спринтов сезона</p>
+        </section>
+
+        <section id="main-title">
+            <h2>Этапы чемпионата</h2>
+            <div class="calendar-container">
+                <div class="race-event">
+                    <div class="race-date">
+                        <span class="race-month">МАРТ</span>
+                        <span class="race-day">14-16</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Гран-при Австралия</h3>
+                        <p>Мельбурн</p>
+                        <div class="race-schedule">
+                            <span>Пт: Практика 1 & Практика 2</span>
+                            <span>Сб: Практика 3 & Квалификация</span>
+                            <span>Вс: Гонка (58 кругов)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="race-event">
+                    <div class="race-date">
+                        <span class="race-month">МАРТ</span>
+                        <span class="race-day">21-23</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Гран-при Китай</h3>
+                        <p>Шанхай</p>
+                        <div class="race-schedule">
+                            <span>Пт: Практика 1 & Практика 2</span>
+                            <span>Сб: Практика 3 & Квалификация</span>
+                            <span>Вс: Гонка (53 кругов)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="race-event">
+                    <div class="race-date">
+                        <span class="race-month">АПР</span>
+                        <span class="race-day">4-6</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Гран-при Япония</h3>
+                        <p>Сузука</p>
+                        <div class="race-schedule">
+                            <span>Пт: Практика 1 & Практика 2</span>
+                            <span>Сб: Практика 3 & Квалификация</span>
+                            <span>Вс: Гонка (53 круга)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="race-event highlighted">
+                    <div class="race-date">
+                        <span class="race-month">АПР</span>
+                        <span class="race-day">11-13</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Гран-при Бахрейн</h3>
+                        <p>Сахир</p>
+                        <div class="race-schedule">
+                            <span>Пт: Практика 1 & Практика 2</span>
+                            <span>Сб: Практика 3 & Квалификация</span>
+                            <span>Вс: Гонка (57 кругов)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="race-event">
+                    <div class="race-date">
+                        <span class="race-month">АПР</span>
+                        <span class="race-day">18-20</span>
+                    </div>
+                    <div class="race-info">
+                        <h3>Гран-при Саудовская Аравия</h3>
+                        <p>Джидда</p>
+                        <div class="race-schedule">
+                            <span>Пт: Практика 1 & Практика 2</span>
+                            <span>Сб: Практика 3 & Квалификация</span>
+                            <span>Вс: Гонка (50 кругoв)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calendar-notes">
+            <h2>Важная информация</h2>
+            <div class="notes-grid">
+                <div class="note-card">
+                    <h3>🏁 Спринт уик-энды</h3>
+                    <p>6 этапов в сезоне 2025 будут включать спринтерские гонки с измененным форматом</p>
+                </div>
+                <div class="note-card">
+                    <h3>🌙 Ночные гонки</h3>
+                    <p>Бахрейн, Саудовская Аравия, Сингапур и Абу-Даби пройдут при искусственном освещении</p>
+                </div>
+                <div class="note-card">
+                    <h3>🔄 Новые трассы</h3>
+                    <p>Сезон 2025 включает возвращение легендарных трасс и новых городских маршрутов</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 id="contacts">Контакты</h2>
+                <address>
+                    <p>
+                        Телефон: <a href="tel:+73333333333">+7 (333) 333-33-33</a><br>
+                        Email: <a href="mailto:tututuMaxVerstappen@f1.ru">tututuMaxVerstappen@f1.ru</a>
+                    </p>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h2>Страницы</h2>
+                <div class="footer-links">
+                    <a href="index.html">Главная</a>
+                    <a href="calendar.html">Календарь</a>
+                    <a href="teams.html">Команды</a>
+                    <a href="gallery.html">Галерея</a>
+                    <a href="news.html">Новости</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top">
+        ↑
+    </a>
+    <script src="theme.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

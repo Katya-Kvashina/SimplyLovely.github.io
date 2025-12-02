@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="C:\Users\admin\Documents\нтернет-ресурсы\port-verstappen-2024.jpg" type="image/png">
+    <title>Новости F1 - Simply Lovely F1</title>
+    <!-- Manifest для PWA -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Предзагрузка критических ресурсов -->
+<link rel="preload" href="index.css" as="style">
+<link rel="preload" href="theme.js" as="script">
+<link rel="preload" href="app.js" as="script">
+
+<!-- Meta теги для PWA -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="F1 App">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#e10600">
+
+<!-- Open Graph метатеги -->
+<meta property="og:title" content="Simply Lovely F1">
+<meta property="og:description" content="Мир Формулы 1 - новости, календарь, команды и статистика">
+<meta property="og:image" content="https://ваш-сайт.com/og-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ваш-сайт.com">
+</head>
+<body>
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="burger-btn">
+        <span></span>
+    </label>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="C:\Users\admin\Documents\нтернет-ресурсы\port-verstappen-2024.jpg" alt="Логотип Формулы 1" width="40" height="40">
+                <span>Simply Lovely F1</span>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="calendar.html">Календарь</a></li>
+                    <li><a href="teams.html">Команды</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="news.html" class="active">Новости</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="notification-container">
+                <div class="notification-bell">🔔 <span class="notification-count">3</span></div>
+                <div class="notification-dropdown">
+                    <div class="notification-item">📢 Новый сезон 2025 начинается!</div>
+                    <div class="notification-item">🏆 Обновление регламента</div>
+                    <div class="notification-item">📅 Следующий ГП: Бахрейн</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="calendar.html">Календарь</a></li>
+            <li><a href="teams.html">Команды</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="news.html" class="active">Новости</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>Новости Формулы 1</h1>
+            <p>Самые свежие новости, трансферы и события из мира королевских гонок</p>
+        </section>
+
+        <section class="news-feed">
+            <article class="news-article featured" id="rules">
+                <div class="article-meta">
+                    <span class="article-date">15 января 2025</span>
+                    <span class="article-category">Регламент</span>
+                </div>
+                <h2>Революционные изменения в регламенте 2025</h2>
+                <div class="article-content">
+                    <img src="C:\Users\admin\Documents\нтернет-ресурсы\FerrariSF-25-2025-1.jpg" alt="Новый регламент">
+                    <div class="article-text">
+                        <p>FIA представила кардинальные изменения в техническом регламенте на сезон 2025. Основные нововведения включают:</p>
+                        <ul>
+                            <li>Увеличение мощности гибридной системы до 350 кВт</li>
+                            <li>Новые требования к безопасности монокока</li>
+                            <li>Изменения в аэродинамике для улучшения обгонов</li>
+                            <li>Введение биотоплива второго поколения</li>
+                        </ul>
+                        <p>Команды уже начали адаптацию к новым требованиям, что обещает сделать сезон 2025 одним из самых зрелищных в истории.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-article" id="tests">
+                <div class="article-meta">
+                    <span class="article-date">10 января 2025</span>
+                    <span class="article-category">Тесты</span>
+                </div>
+                <h2>Завершились предсезонные тесты в Барселоне</h2>
+                <div class="article-content">
+                    <p>Трехдневные тесты на трассе Каталунья показали интересную расстановку сил. Red Bull и Ferrari демонстрируют близкие результаты, в то время как Mercedes представил революционную концепцию шасси.</p>
+                    <div class="test-results">
+                        <h3>Лучшие времена тестов:</h3>
+                        <ol>
+                            <li>Ферстаппен (Red Bull) - 1:15.234</li>
+                            <li>Леклер (Ferrari) - 1:15.301</li>
+                            <li>Хэмилтон (Mercedes) - 1:15.456</li>
+                            <li>Норрис (McLaren) - 1:15.567</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-article" id="drivers">
+                <div class="article-meta">
+                    <span class="article-date">5 января 2025</span>
+                    <span class="article-category">Трансферы</span>
+                </div>
+                <h2>Сенсационные переходы в межсезонье</h2>
+                <div class="article-content">
+                    <p>Межсезонье 2025 года запомнится несколькими громкими переходами:</p>
+                    <ul>
+                        <li>Карлос Сайнс переходит в Williams</li>
+                        <li>Льюис Хэмилтон переходит в Ferrari</li>
+                        <li>Исаак Аджар дебют в Racing Bulls</li>
+                        <li>Kимми Aнтонелли дебют в Mercedes</li>
+                        <li>Оливер Берман дебют в Haas</li>
+                        <li>Бортолетто Габриэль дебют в Sauber</li>
+                    </ul>
+                    <p>Эти изменения обещают сделать борьбу в чемпионате еще более напряженной.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="news-sidebar">
+            <h2>Ближайшие события</h2>
+            <div class="upcoming-events">
+                <div class="event">
+                    <h3>Презентация Mercedes W16</h3>
+                    <span>20 января 2025</span>
+                </div>
+                <div class="event">
+                    <h3>Тесты в Бахрейне</h3>
+                    <span>26-28 февраля 2025</span>
+                </div>
+                <div class="event">
+                    <h3>Гран-при Бахрейна</h3>
+                    <span>11-13 марта 2025</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 id="contacts">Контакты</h2>
+                <address>
+                    <p>
+                        Телефон: <a href="tel:+73333333333">+7 (333) 333-33-33</a><br>
+                        Email: <a href="mailto:tututuMaxVerstappen@f1.ru">tututuMaxVerstappen@f1.ru</a>
+                    </p>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h2>Страницы</h2>
+                <div class="footer-links">
+                    <a href="index.html">Главная</a>
+                    <a href="calendar.html">Календарь</a>
+                    <a href="teams.html">Команды</a>
+                    <a href="gallery.html">Галерея</a>
+                    <a href="news.html">Новости</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top">
+        ↑
+    </a>
+    <script src="theme.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

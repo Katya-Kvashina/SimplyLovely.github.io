@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="C:\Users\admin\Documents\нтернет-ресурсы\port-verstappen-2024.jpg" type="image/png">
+    <title>Галерея F1 - Simply Lovely F1</title>
+    <!-- Manifest для PWA -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Предзагрузка критических ресурсов -->
+<link rel="preload" href="index.css" as="style">
+<link rel="preload" href="theme.js" as="script">
+<link rel="preload" href="app.js" as="script">
+
+<!-- Meta теги для PWA -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="F1 App">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#e10600">
+
+<!-- Open Graph метатеги -->
+<meta property="og:title" content="Simply Lovely F1">
+<meta property="og:description" content="Мир Формулы 1 - новости, календарь, команды и статистика">
+<meta property="og:image" content="https://ваш-сайт.com/og-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ваш-сайт.com">
+</head>
+<body>
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="burger-btn">
+        <span></span>
+    </label>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="C:\Users\admin\Documents\нтернет-ресурсы\port-verstappen-2024.jpg" alt="Логотип Формулы 1" width="40" height="40">
+                <span>Simply Lovely F1</span>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="calendar.html">Календарь</a></li>
+                    <li><a href="teams.html">Команды</a></li>
+                    <li><a href="gallery.html" class="active">Галерея</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="notification-container">
+                <div class="notification-bell">🔔 <span class="notification-count">3</span></div>
+                <div class="notification-dropdown">
+                    <div class="notification-item">📢 Новый сезон 2025 начинается!</div>
+                    <div class="notification-item">🏆 Обновление регламента</div>
+                    <div class="notification-item">📅 Следующий ГП: Бахрейн</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="calendar.html">Календарь</a></li>
+            <li><a href="teams.html">Команды</a></li>
+            <li><a href="gallery.html" class="active">Галерея</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>Галерея Формулы 1</h1>
+            <p>Лучшие фотографии, видео и моменты из мира королевских гонок</p>
+        </section>
+
+        <!-- Здесь будет оригинальная галерея -->
+        <section id="gallery">
+            <h2>Фотогалерея 2025</h2>
+            <div class="gallery-container">
+                <!-- Оригинальные элементы галереи -->
+                <div class="gallery-item">
+                    <img src="C:\Users\admin\Documents\нтернет-ресурсы\4.jpg" alt="Макс Ферстаппен">
+                    <div class="gallery-overlay">
+                        <h3>Макс Ферстаппен</h3>
+                        <p>Четырехкратный или же пятикратный чемпион мира?</p>
+                    </div>
+                </div>
+                 <div class="gallery-item">
+                    <img src="C:\Users\admin\Documents\нтернет-ресурсы\i.webp" alt="Ferrari SF-25">
+                    <div class="gallery-overlay">
+                        <h3>Ferrari SF-25(трактор)</h3>
+                        <p>Новые стратегии Ferrari на сезон 2025.Фанты ферарри в восторге.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\admin\Documents\нтернет-ресурсы\rookie.jpg" alt="Mercedes W16">
+                    <div class="gallery-overlay">
+                        <h3>Фернандо Алонсо</h3>
+                        <p>Rookie года? </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\admin\Documents\нтернет-ресурсы\piastry.jpg" alt="Mercedes W16">
+                    <div class="gallery-overlay">
+                        <h3>Папая рулс, пит-стопы, сейфти кар</h3>
+                        <p>Продия на стратегии Ferrari? Просчитались, но где... </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\admin\Documents\нтернет-ресурсы\sainz.jpg" alt="Mercedes W16">
+                    <div class="gallery-overlay">
+                        <h3>Williams FW47</h3>
+                        <p>Звездочка Williams Карлос Сайнз. Возвращение легенды.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\admin\Documents\нтернет-ресурсы\cris.jpg" alt="Aston Martin AMR25">
+                    <div class="gallery-overlay">
+                        <h3>Уход Кристиана Хорнера</h3>
+                        <p>Секрет успеха Макса Ферстаппена?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Видео секция -->
+        <section class="video-section">
+            <h2>Видео моменты</h2>
+            <div class="video-container">
+                <!-- Оригинальные видео карточки -->
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button">▶</div>
+                        <img src="C:\Users\admin\Documents\нтернет-ресурсы\photo_1_2025-12-02_22-02-13.jpg" alt="Обзор гонки">
+                    </div>
+                    <div class="video-info">
+                        <h3>2025 F1 Сезон</h3>
+                        <p>История ещё не закончена</p>
+                        <span class="video-duration">1:00:00</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="video-card">
+            <div class="video-thumbnail">
+                <div class="play-button">▶</div>
+                <img src="C:\Users\admin\Documents\нтернет-ресурсы\photo_1_2025-12-02_22-10-44.jpg" alt="Квалификация">
+            </div>
+            <div class="video-info">
+                <h3>Кто будет чемпионом?</h3>
+                <p>Обзор Гран-При Катара 2025</p>
+                <span class="video-duration">28:18</span>
+            </div>
+        </a>
+        
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="video-card">
+            <div class="video-thumbnail">
+                <div class="play-button">▶</div>
+                <img src="C:\Users\admin\Documents\нтернет-ресурсы\photo_1_2025-12-02_22-06-00.jpg" alt="Финиш">
+            </div>
+            <div class="video-info">
+                <h3>Прорыв Ферстаппена</h3>
+                <p>Обзор Гран-При Бразилии 2025</p>
+                <span class="video-duration">28:27</span>
+            </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=Z2ZZn3-1Paw" target="_blank" class="video-card">
+            <div class="video-thumbnail">
+                <div class="play-button">▶</div>
+                <img src="C:\Users\admin\Documents\нтернет-ресурсы\photo_1_2025-12-02_22-07-53.jpg" alt="Red Bull">
+            </div>
+            <div class="video-info">
+                <h3>Хайлайты всех Гран-При 2024 сезона</h3>
+                <p>Нарезка всех гонок</p>
+                <span class="video-duration">3:10:47</span>
+            </div>
+        </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 id="contacts">Контакты</h2>
+                <address>
+                    <p>
+                        Телефон: <a href="tel:+73333333333">+7 (333) 333-33-33</a><br>
+                        Email: <a href="mailto:tututuMaxVerstappen@f1.ru">tututuMaxVerstappen@f1.ru</a>
+                    </p>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h2>Страницы</h2>
+                <div class="footer-links">
+                    <a href="index.html">Главная</a>
+                    <a href="calendar.html">Календарь</a>
+                    <a href="teams.html">Команды</a>
+                    <a href="gallery.html">Галерея</a>
+                    <a href="news.html">Новости</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top">
+        ↑
+    </a>
+    <script src="theme.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
